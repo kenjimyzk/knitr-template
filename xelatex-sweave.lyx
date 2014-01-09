@@ -2,18 +2,16 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass jsarticle
+\textclass bxjsarticle
 \begin_preamble
-\usepackage{textcomp}
-\usepackage{lmodern}
-\usepackage[utf8]{inputenc}
-\usepackage{otf}
-\usepackage{url}
+\usepackage{xltxtra}
+\usepackage{zxjatype}
+\usepackage[hiragino-dx]{zxjafont}
+\usepackage{hyperref}
 \end_preamble
-\options dvipdfmx
-\use_default_options true
+\use_default_options false
 \begin_modules
-knitr
+sweave
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -86,35 +84,11 @@ knitr
 \begin_body
 
 \begin_layout Title
-knitr
+sweave
 \end_layout
 
 \begin_layout Author
-宮崎
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<set-options, echo=FALSE, cache=FALSE>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-read_chunk('Chunk.R')
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
-
+宮﨑
 \end_layout
 
 \begin_layout Standard
@@ -138,7 +112,17 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk01, echo=FALSE, message=FALSE>>=
+<<echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+x <- runif(100) 
+\end_layout
+
+\begin_layout Plain Layout
+
+y <- 10 + 2 * x + rnorm(100) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -161,7 +145,12 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk02, message=FALSE>>=
+<<>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+result <- lm(y~x) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -191,7 +180,7 @@ status open
 
 
 \backslash
-Sexpr{result$coefficient[2]}
+Sexpr{round(result$coefficient[2],3)}
 \end_layout
 
 \end_inset
@@ -261,7 +250,17 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk03, echo=FALSE, results='asis'>>=
+<<echo=FALSE, results=tex>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+library(xtable) 
+\end_layout
+
+\begin_layout Plain Layout
+
+print(xtable(result, digits=3), floating=FALSE)
 \end_layout
 
 \begin_layout Plain Layout
@@ -330,7 +329,17 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk04, echo=FALSE, fig.width=4, fig.height=3>>=
+<<fig=TRUE, echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+
+abline(result) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -356,7 +365,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "PIH"
-options "jecon-km"
+options "plainnat"
 
 \end_inset
 
