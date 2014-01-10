@@ -16,9 +16,9 @@ print(tab, floating=FALSE)
 
 
 ## ---- Chunk04 ----
-library(Cairo)
+library(tikzDevice)
+#library(Cairo)
 par(family="HiraKakuProN-W3")
-plot(説明変数,従属変数)
 abline(result)
 
 

@@ -18,7 +18,7 @@ knitr
 \maintain_unincluded_children false
 \language english
 \language_package none
-\inputencoding utf8-plain
+\inputencoding utf8-platex
 \fontencoding global
 \font_roman palatino
 \font_sans lmss
@@ -119,8 +119,8 @@ read_chunk('Chunk.R')
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand cite
-key "campbell_consumption_1990,sakai_2010"
+LatexCommand citet
+key "campbell_consumption_1990,Abe_2012"
 
 \end_inset
 

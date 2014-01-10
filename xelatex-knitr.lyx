@@ -34,7 +34,16 @@ knitr
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_package amsmath 1
@@ -47,8 +56,8 @@ knitr
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -116,12 +125,13 @@ read_chunk('Chunk.R')
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "campbell_consumption_1990,sakai_2010"
 
 \end_inset
 
 を参考にする.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -353,7 +363,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "PIH"
-options "plainnat"
+options "jecon-km"
 
 \end_inset
 
