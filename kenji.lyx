@@ -72,9 +72,12 @@
 test
 \end_layout
 
+<<<<<<< HEAD
 \begin_layout Standard
 test
 \end_layout
 
+=======
+>>>>>>> e2edd427755cd8647fc8a8a3c370b4cddcbdf90c
 \end_body
 \end_document
