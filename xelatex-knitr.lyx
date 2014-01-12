@@ -110,7 +110,7 @@ status open
 
 \begin_layout Plain Layout
 
-con = file("jchunk.R", encoding = "UTF-8")
+con = file("Chunk.R", encoding = "UTF-8")
 \end_layout
 
 \begin_layout Plain Layout
