@@ -2,24 +2,19 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass jsarticle
+\textclass bxjsarticle
 \begin_preamble
-\usepackage{textcomp}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{otf}
-
+\usepackage{xltxtra}
+\usepackage{zxjatype}
+\usepackage[hiragino-dx]{zxjafont}
 \usepackage{hyperref}
-\usepackage{pxjahyper}
-\usepackage{jlisting}
 \end_preamble
-\options dvipdfmx
 \use_default_options true
 \begin_modules
 knitr
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language japanese
 \language_package none
 \inputencoding utf8-plain
 \fontencoding global
@@ -93,7 +88,7 @@ knitr
 \end_layout
 
 \begin_layout Author
-宮崎
+宮﨑
 \end_layout
 
 \begin_layout Standard
@@ -107,7 +102,7 @@ status open
 
 \begin_layout Plain Layout
 
-read_chunk('jchunk.R')
+read_chunk("jchunk.R")
 \end_layout
 
 \begin_layout Plain Layout
@@ -122,12 +117,13 @@ read_chunk('jchunk.R')
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "campbell_consumption_1990,sakai_2010"
 
 \end_inset
 
 を参考にする.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -207,7 +203,7 @@ reference "fig1"
 
 \end_inset
 
-にまとめられる
+にまとめられる.
 \end_layout
 
 \begin_layout Standard
@@ -215,10 +211,6 @@ reference "fig1"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -333,7 +325,7 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk04, echo=FALSE, fig.width=4, fig.height=3, warning=FALSE, message=FALSE,
+<<Chunk04, echo=FALSE, fig.width=8, fig.height=3, warning=FALSE, message=FALSE,
  dev='quartz_pdf'>>=
 \end_layout
 

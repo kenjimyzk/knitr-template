@@ -13,7 +13,7 @@
 knitr
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language japanese
 \language_package none
 \inputencoding utf8-plain
 \fontencoding global
@@ -110,7 +110,17 @@ status open
 
 \begin_layout Plain Layout
 
-read_chunk('Chunk.R')
+con = file("jchunk.R", encoding = "UTF-8")
+\end_layout
+
+\begin_layout Plain Layout
+
+read_chunk(con)
+\end_layout
+
+\begin_layout Plain Layout
+
+close(con)
 \end_layout
 
 \begin_layout Plain Layout
@@ -211,7 +221,7 @@ reference "fig1"
 
 \end_inset
 
-にまとめられる
+にまとめられる.
 \end_layout
 
 \begin_layout Standard
@@ -219,10 +229,6 @@ reference "fig1"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard

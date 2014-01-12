@@ -16,9 +16,12 @@ print(tab, floating=FALSE)
 
 
 ## ---- Chunk04 ----
-library(tikzDevice)
-#library(Cairo)
+#library(tikzDevice)
+# library(Cairo)
+par(mar=c(5,4,1,1))
+#par(family="Japan1GothicBBB")
 par(family="HiraKakuProN-W3")
+plot(説明変数,従属変数)
 abline(result)
 
 

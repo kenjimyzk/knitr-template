@@ -89,7 +89,7 @@ knitr
 \begin_body
 
 \begin_layout Title
-knitr
+正規分布
 \end_layout
 
 \begin_layout Author
@@ -97,150 +97,14 @@ knitr
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<set-options, echo=FALSE, cache=FALSE>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-read_chunk('jchunk.R')
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand cite
-key "campbell_consumption_1990,sakai_2010"
-
-\end_inset
-
-を参考にする.
-\end_layout
-
-\begin_layout Standard
-はじめに, 乱数を発生させ, 回帰を実施する.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<Chunk01, echo=FALSE, message=FALSE>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-結果を実行すると以下のとおりである.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<<Chunk02, message=FALSE>>=
-\end_layout
-
-\begin_layout Plain Layout
-
-@
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-結果を表
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab1"
-
-\end_inset
-
-にまとめられる.
- 回帰係数は
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{result$coefficient[2]}
-\end_layout
-
-\end_inset
-
-である.
- 結果は図
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig1"
-
-\end_inset
-
-にまとめられる
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-回帰結果表
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab1"
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -264,7 +128,23 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk03, echo=FALSE, results='asis'>>=
+<<echo=FALSE, fig.width=5, fig.height=4, warning=FALSE, message=FALSE, dev='quartz
+_pdf'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(family="HiraKakuProN-W3");
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mgp=c(2,0.8,0));
+\end_layout
+
+\begin_layout Plain Layout
+
+curve(dnorm(x), xlim=c(-3,3), main="正規分布 (ヒラギノ)", lwd=2)
 \end_layout
 
 \begin_layout Plain Layout
@@ -274,10 +154,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -293,25 +169,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-回帰結果図
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig1"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -333,8 +190,23 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk04, echo=FALSE, fig.width=4, fig.height=3, warning=FALSE, message=FALSE,
- dev='quartz_pdf'>>=
+<<echo=FALSE, fig.width=5, fig.height=4, warning=FALSE, message=FALSE, dev='pdf'>>
+=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(family="Japan1GothicBBB");
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mgp=c(2,0.8,0));
+\end_layout
+
+\begin_layout Plain Layout
+
+curve(dnorm(x), xlim=c(-3,3), main="正規分布 (リューミンライト)", lwd=2)
 \end_layout
 
 \begin_layout Plain Layout
@@ -346,21 +218,6 @@ status open
 
 
 \end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "PIH"
-options "jecon-km"
 
 \end_inset
 

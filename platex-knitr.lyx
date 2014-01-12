@@ -16,7 +16,7 @@
 knitr
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language japanese
 \language_package none
 \inputencoding utf8-platex
 \fontencoding global
@@ -120,7 +120,7 @@ read_chunk('Chunk.R')
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
-key "campbell_consumption_1990,Abe_2012"
+key "campbell_consumption_1990,Abe_2012,breitung_unit_2005"
 
 \end_inset
 
@@ -271,10 +271,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
