@@ -110,7 +110,7 @@ status open
 
 \begin_layout Plain Layout
 
-con = file("Chunk.R", encoding = "UTF-8")
+con = file("jchunk.R", encoding = "UTF-8")
 \end_layout
 
 \begin_layout Plain Layout
@@ -343,7 +343,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk04, echo=FALSE, fig.width=8, fig.height=3>>=
+<<Chunk04, echo=FALSE, fig.width=8, fig.height=3, warning=FALSE, message=FALSE,
+ dev='quartz_pdf'>>=
 \end_layout
 
 \begin_layout Plain Layout
