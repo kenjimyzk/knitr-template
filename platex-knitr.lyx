@@ -104,7 +104,7 @@ status open
 
 \begin_layout Plain Layout
 
-read_chunk('Chunk.R')
+read_chunk('jchunk.R')
 \end_layout
 
 \begin_layout Plain Layout
@@ -125,10 +125,7 @@ key "campbell_consumption_1990,Abe_2012,breitung_unit_2005"
 \end_inset
 
 を参考にする.
-\end_layout
-
-\begin_layout Standard
-はじめに, 乱数を発生させ, 回帰を実施する.
+ はじめに, 乱数を発生させ, 回帰を実施する.
  
 \end_layout
 
@@ -326,7 +323,8 @@ status open
 
 \begin_layout Plain Layout
 
-<<Chunk04, echo=FALSE, fig.width=4, fig.height=3>>=
+<<Chunk04, echo=FALSE, fig.width=4, fig.height=3, warning=FALSE, message=FALSE,
+ dev='quartz_pdf'>>=
 \end_layout
 
 \begin_layout Plain Layout
