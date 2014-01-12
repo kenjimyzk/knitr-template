@@ -7,8 +7,17 @@
 \usepackage{xltxtra}
 \usepackage{zxjatype}
 \usepackage[hiragino-dx]{zxjafont}
+<<<<<<< .merge_file_wnLbAx
 %\usetheme{Singapore}
 \usecolortheme{whale}
+=======
+%\setmainfont{Ricty}
+%\XeTeXlinebreaklocale "ja"
+%lyx
+\usetheme{Madrid}
+\usecolortheme{beaver}
+%\usefonttheme{serif}
+>>>>>>> .merge_file_nTsiPZ
 \end_preamble
 \use_default_options true
 \begin_modules
