@@ -337,7 +337,17 @@ status open
 
 \begin_layout Plain Layout
 
+par(family="Japan1GothicBBB")
+\end_layout
+
+\begin_layout Plain Layout
+
 plot(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+
+title(main="関係図")
 \end_layout
 
 \begin_layout Plain Layout

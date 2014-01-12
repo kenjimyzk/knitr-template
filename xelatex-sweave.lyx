@@ -339,6 +339,11 @@ plot(x,y)
 
 \begin_layout Plain Layout
 
+title(main="関係図", family="Japan1GothicBBB")
+\end_layout
+
+\begin_layout Plain Layout
+
 abline(result) 
 \end_layout
 
