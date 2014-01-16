@@ -102,6 +102,14 @@ key "campbell_consumption_1990,sakai_2010"
 \end_inset
 
 を参考にする.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "平山_健二郎_日本における消費関数_1999"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -377,7 +385,7 @@ abline(result)
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "PIH"
+bibfiles "PIH,/Users/kenjimyzk/Documents/exported2"
 options "jecon-km"
 
 \end_inset

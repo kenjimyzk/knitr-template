@@ -93,12 +93,13 @@ sweave
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "campbell_consumption_1990,sakai_2010"
 
 \end_inset
 
 を参考にする.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -137,6 +138,7 @@ y <- 10 + 2 * x + rnorm(100)
 
 \begin_layout Standard
 結果を実行すると以下のとおりである.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -370,7 +372,7 @@ abline(result)
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "PIH"
-options "plainnat"
+options "jecon-km"
 
 \end_inset
 
